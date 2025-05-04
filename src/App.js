@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
-
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
-export default App;
+    const tasks = ['Buy groceries', 'Walk the dog', 'Read a book'];
+  
+    return (
+      <div style={{ padding: '2rem', fontFamily: 'Arial' }}>
+        <h1>📝 My Tasks</h1>
+        <ul>
+          {tasks.map((task, index) => (
+            <li key={index} style={{ marginTop: '0.5rem' }}>
+              ✅ {task}
+            </li>
+          ))}
+        </ul>
+      </div>
+    );
+  }
+  
+  export default App;
+  
