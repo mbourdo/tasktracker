@@ -71,7 +71,7 @@ function ListPage() {
                   >
                     {tripTitle}
                   </h2>
-                  <img src="/assets/images/pencil-icon.png" className="edit-icon" alt="Edit" />
+                  <img src="/public/assets/images/pencil-icon.png" className="edit-icon" alt="Edit" />
 
                 </div>
 
